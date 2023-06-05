@@ -1,0 +1,106 @@
+.info {
+    padding-top: 65px;
+    // max-width: min-content;
+
+    &__items {
+        flex: 1;
+        &_start {
+            margin-top: 95px;
+            max-width: 660px;
+            transform: translateX(83px);
+        }
+    }
+
+    &__title {
+        // transform: translateX(142px);
+        line-height: 1.2;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+
+    &__wrapper {
+        display: flex;
+        color: #fff;
+        // align-items: center;
+    }
+
+    &__discount {
+        max-width: 500px;
+        height: 40px;
+        border-radius: 15px;
+        font-size: 16px;
+        line-height: 1.1;
+        color: #FFFFFF;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+        background: $grey-black_gradient ;
+        padding: 9px 0 6px 10px;
+        align-items: center;
+        display: flex;
+        // margin-bottom: 20px;
+
+        &::before {
+            content: url('../img/icons/procent.png');
+            margin-right: 12px;
+        }
+    }
+
+    &__desc {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 110%;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.75);
+        width: 660px;
+        // letter-spacing: -1px;    
+        margin-top: 20px;
+    }
+
+    &__img {
+        position: relative;
+        width: 630px;
+        height: 808px;
+        // object-fit: contain;
+        object-position: center;
+        // transform: translateX(70px);
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &::after {
+            content: "";
+            background: linear-gradient(212.83deg, #98F1E8 12.97%, #00FFE5 85.6%);
+            opacity: 0.4;
+            filter: blur(150px);
+            position: absolute;
+            display: block;
+            width: 600px;
+            height: 622px;
+            // clip-path: circle(50% at 50% 50%);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+        }
+    }
+
+    &__brands {
+        margin-top: 24px;
+        display: flex;
+        span {
+            background: $grey-black_gradient;
+            padding: 8px 20px;
+            margin: 0 20px 0 20px;
+            border-radius: 99px;
+            &:nth-child(1) {
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 58px;
+    }
+}

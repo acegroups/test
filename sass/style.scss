@@ -1,0 +1,14 @@
+@import "base/variables";
+@import "blocks/title";
+@import "blocks/header";
+@import "blocks/info";
+@import "blocks/buttons";
+
+.container {
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body {
+    background: linear-gradient(90deg, #02030C 0%, #030511 100%);
+}
